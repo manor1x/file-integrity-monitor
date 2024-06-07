@@ -89,7 +89,7 @@ def monitor_directory(directory, file_hashes):
     observer.join()
 
 def main():
-    directory_to_monitor = 'E:\\integrity check'  # Update this path to your test directory
+    directory_to_monitor = 'E:\\integrity check'  # update this path to your directory
     if not os.path.isdir(directory_to_monitor):
         logging.error(f'{directory_to_monitor} is not a valid directory')
         return
